@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  webapp:
+    build: .
+    container_name: facebook-ads-intelligence
+    ports:
+      - "8080:80"
+    volumes:
+      # Mount current directory for live updates during development
+      - .:/usr/share/nginx/html:ro
+    restart: unless-stopped
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.webapp.rule=Host(`localhost`)"
+      - "traefik.http.services.webapp.loadbalancer.server.port=80"

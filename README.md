@@ -52,7 +52,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/facebook-ads-intelligence.git
+git clone https://github.com/AnsKM/facebook-ads-intelligence.git
 cd facebook-ads-intelligence
 
 # Install dependencies
@@ -68,10 +68,32 @@ npm run start:safe -- 105168211848225
 
 # Launch the web dashboard
 cd ../webapp
-# Open index.html in your browser or use a local server
-python -m http.server 8000
-# Visit http://localhost:8000
+
+# Option 1: Auto-detect server
+./start-server.sh
+
+# Option 2: Node.js (no dependencies)
+node server.js
+
+# Option 3: Python
+python3 server.py
+
+# Option 4: Docker
+docker-compose up
+
+# Visit http://localhost:8080
 ```
+
+### 🖥️ Running Locally
+
+The webapp includes multiple server options with zero dependencies:
+
+1. **Node.js Server** (`server.js`) - Built-in modules only
+2. **Python Server** (`server.py`) - Standard library only  
+3. **Docker Container** - Production-ready Nginx
+4. **Auto-Selector** (`start-server.sh`) - Picks best option
+
+See [webapp/README.md](webapp/README.md) for detailed server documentation.
 
 ## 🎯 Usage
 
