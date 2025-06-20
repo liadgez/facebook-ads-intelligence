@@ -1,0 +1,303 @@
+/* Custom Styles for Facebook Ads Intelligence Dashboard */
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Card Hover Effects */
+.ad-card {
+    transition: all 0.3s ease;
+}
+
+.ad-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Emotional Trigger Badges */
+.trigger-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    text-transform: capitalize;
+}
+
+.trigger-fear {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.trigger-greed {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.trigger-urgency {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.trigger-social_proof {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.trigger-trust {
+    background-color: #ede9fe;
+    color: #5b21b6;
+}
+
+.trigger-curiosity {
+    background-color: #f3e8ff;
+    color: #6b21a8;
+}
+
+/* Platform Icons */
+.platform-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.platform-facebook {
+    background-color: #1877f2;
+    color: white;
+}
+
+.platform-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+}
+
+.platform-messenger {
+    background: linear-gradient(45deg, #00b2ff, #006aff);
+    color: white;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.5rem;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal-enter {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Chart Container */
+.chart-container {
+    position: relative;
+    height: 300px;
+}
+
+/* Loading Spinner */
+.spinner {
+    border: 3px solid #f3f4f6;
+    border-top: 3px solid #2563eb;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Scroll Shadows */
+.scroll-shadow {
+    position: relative;
+}
+
+.scroll-shadow::before,
+.scroll-shadow::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 40px;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.scroll-shadow::before {
+    top: 0;
+    background: linear-gradient(to bottom, white, transparent);
+}
+
+.scroll-shadow::after {
+    bottom: 0;
+    background: linear-gradient(to top, white, transparent);
+}
+
+/* Dark Mode Adjustments */
+.dark .scroll-shadow::before {
+    background: linear-gradient(to bottom, #1f2937, transparent);
+}
+
+.dark .scroll-shadow::after {
+    background: linear-gradient(to top, #1f2937, transparent);
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: absolute;
+    background-color: #1f2937;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #1f2937;
+}
+
+/* Progress Bar */
+.progress-bar {
+    height: 4px;
+    background-color: #e5e7eb;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #2563eb;
+    transition: width 0.3s ease;
+}
+
+/* Copy Text Animation */
+.copy-text {
+    line-height: 1.6;
+    max-height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.copy-text.expanded {
+    max-height: none;
+}
+
+.copy-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, white);
+}
+
+.copy-text.expanded::after {
+    display: none;
+}
+
+.dark .copy-text::after {
+    background: linear-gradient(to bottom, transparent, #1f2937);
+}
+
+/* Export Button Styles */
+.export-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+}
+
+.dark .export-menu {
+    background-color: #374151;
+    border-color: #4b5563;
+}
+
+.export-menu button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    transition: background-color 0.2s;
+}
+
+.export-menu button:hover {
+    background-color: #f3f4f6;
+}
+
+.dark .export-menu button:hover {
+    background-color: #4b5563;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .ad-card {
+        margin-bottom: 1rem;
+    }
+    
+    #adModal > div:last-child {
+        max-width: 100%;
+    }
+    
+    .image-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+}

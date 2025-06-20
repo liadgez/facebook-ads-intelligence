@@ -1,0 +1,266 @@
+[
+  {
+    "id": "1997834757719088",
+    "advertiser": {
+      "name": "Dan Wardrope",
+      "pageId": "105168211848225",
+      "url": "https://www.facebook.com/ads/library/?id=105168211848225"
+    },
+    "creative": {
+      "copy": {
+        "headline": "Discover the $9 Billion Secret",
+        "primaryText": "Have you heard of the billion dollar '9 word email' that's quietly revolutionizing how smart entrepreneurs build their businesses? While everyone else is chasing the latest tactics, a small group of business owners are using this simple method to generate predictable revenue month after month. This isn't about working harder or spending more on ads. It's about a fundamental shift in how you communicate with your audience. The same approach that built empires for companies you use every day, now available to anyone willing to learn. Don't let another month pass wondering why your competitors seem to have it all figured out. The answer might be simpler than you think.",
+        "description": "Learn the exact email strategy used by 7-figure businesses",
+        "ctaButton": "Learn More",
+        "wordCount": 124,
+        "allTexts": [
+          "Discover the $9 Billion Secret",
+          "Have you heard of the billion dollar '9 word email'..."
+        ]
+      },
+      "media": {
+        "images": [
+          {
+            "url": "https://example.com/ad-image-1.jpg",
+            "alt": "Business growth chart",
+            "dimensions": {
+              "width": 1200,
+              "height": 628
+            },
+            "isCarousel": false
+          }
+        ],
+        "videos": [],
+        "hasVideo": false
+      },
+      "design": {
+        "imageCount": 1,
+        "isCarousel": false,
+        "hasConsistentBranding": true
+      },
+      "emotional": {
+        "triggers": ["fear", "greed", "urgency", "social_proof", "curiosity"],
+        "sentiment": "positive",
+        "urgency": 5,
+        "personalLevel": 0.8,
+        "powerWords": ["billion", "secret", "revolutionary", "predictable", "simple"]
+      }
+    },
+    "funnel": {
+      "landing": {
+        "url": "https://example.com/9-word-email-course",
+        "domain": "example.com",
+        "ctaText": "Learn More"
+      },
+      "conversion": {
+        "objective": "lead_generation",
+        "offerType": "free_course"
+      }
+    },
+    "targeting": {
+      "platforms": ["facebook", "instagram"],
+      "audience": {
+        "type": "b2b",
+        "indicators": ["entrepreneurs", "business owners"]
+      }
+    },
+    "performance": {
+      "metrics": {
+        "daysRunning": 45,
+        "isActive": true,
+        "creativesCount": 3
+      },
+      "timeline": {
+        "startDate": "2025-05-06",
+        "endDate": null,
+        "isActive": true
+      }
+    },
+    "strategy": {
+      "objective": "lead_generation",
+      "positioning": "trusted_authority",
+      "differentiators": ["proprietary_tech", "industry_recognition"],
+      "approach": "direct_response"
+    },
+    "metadata": {
+      "scrapedAt": "2025-06-20T10:30:00Z",
+      "pageUrl": "https://www.facebook.com/ads/library/?view_all_page_id=105168211848225",
+      "pageNumber": 1
+    }
+  },
+  {
+    "id": "2847569384756938",
+    "advertiser": {
+      "name": "Marketing Masters Academy",
+      "pageId": "298475632984756",
+      "url": "https://www.facebook.com/ads/library/?id=298475632984756"
+    },
+    "creative": {
+      "copy": {
+        "headline": "Warning: Your Competitors Know This",
+        "primaryText": "Every day you wait, your competitors are getting further ahead. They're using AI-powered tools that write perfect sales copy in seconds, create stunning visuals without designers, and automate tasks that used to take hours. Meanwhile, you're still doing things the old way. But here's the good news: You can catch up and surpass them in just 30 days. Our students report saving 20+ hours per week while doubling their conversion rates. This isn't science fiction - it's happening right now. The question is: Will you be the disruptor or the disrupted?",
+        "ctaButton": "Start Free Trial",
+        "wordCount": 98,
+        "allTexts": [
+          "Warning: Your Competitors Know This",
+          "Every day you wait, your competitors are getting further ahead..."
+        ]
+      },
+      "media": {
+        "images": [
+          {
+            "url": "https://example.com/ad-image-2.jpg",
+            "alt": "AI marketing dashboard",
+            "dimensions": {
+              "width": 1080,
+              "height": 1080
+            },
+            "isCarousel": false
+          }
+        ],
+        "videos": [],
+        "hasVideo": false
+      },
+      "emotional": {
+        "triggers": ["fear", "urgency", "social_proof"],
+        "sentiment": "negative",
+        "urgency": 8,
+        "personalLevel": 0.9,
+        "powerWords": ["warning", "perfect", "stunning", "doubling"]
+      }
+    },
+    "funnel": {
+      "landing": {
+        "url": "https://example.com/ai-marketing-trial",
+        "domain": "example.com",
+        "ctaText": "Start Free Trial"
+      },
+      "conversion": {
+        "objective": "sales",
+        "offerType": "free_trial"
+      }
+    },
+    "targeting": {
+      "platforms": ["facebook", "instagram", "messenger"],
+      "audience": {
+        "type": "b2b",
+        "indicators": ["marketers", "business owners", "agencies"]
+      }
+    },
+    "performance": {
+      "metrics": {
+        "daysRunning": 12,
+        "isActive": true,
+        "creativesCount": 5
+      },
+      "timeline": {
+        "startDate": "2025-06-08",
+        "endDate": null,
+        "isActive": true
+      }
+    },
+    "strategy": {
+      "objective": "sales",
+      "positioning": "innovation_leader",
+      "differentiators": ["first_mover", "proprietary_tech"],
+      "approach": "direct_response"
+    },
+    "metadata": {
+      "scrapedAt": "2025-06-20T10:32:00Z",
+      "pageUrl": "https://www.facebook.com/ads/library/?view_all_page_id=298475632984756",
+      "pageNumber": 1
+    }
+  },
+  {
+    "id": "9384756291038475",
+    "advertiser": {
+      "name": "Scale Smart Solutions",
+      "pageId": "847563928475632",
+      "url": "https://www.facebook.com/ads/library/?id=847563928475632"
+    },
+    "creative": {
+      "copy": {
+        "headline": "From $3k to $30k/Month (True Story)",
+        "primaryText": "Sarah was stuck at $3,000/month for years. She tried everything - new services, better marketing, even lowering her prices. Nothing worked. Then she discovered the 'Service Stack Method' that changed everything. In just 90 days, she hit $30,000/month with the same amount of clients. No burnout. No 80-hour weeks. Just a smarter way to package and price what she was already doing. Now she takes Fridays off and still makes more than most corporate executives. Want to know her exact blueprint?",
+        "ctaButton": "Get The Blueprint",
+        "wordCount": 91,
+        "allTexts": [
+          "From $3k to $30k/Month (True Story)",
+          "Sarah was stuck at $3,000/month for years..."
+        ]
+      },
+      "media": {
+        "images": [
+          {
+            "url": "https://example.com/ad-image-3.jpg",
+            "alt": "Success story testimonial",
+            "dimensions": {
+              "width": 1200,
+              "height": 628
+            },
+            "isCarousel": true
+          },
+          {
+            "url": "https://example.com/ad-image-4.jpg",
+            "alt": "Income growth chart",
+            "dimensions": {
+              "width": 1200,
+              "height": 628
+            },
+            "isCarousel": true
+          }
+        ],
+        "videos": [],
+        "hasVideo": false
+      },
+      "emotional": {
+        "triggers": ["greed", "social_proof", "trust", "curiosity"],
+        "sentiment": "positive",
+        "urgency": 3,
+        "personalLevel": 0.6,
+        "powerWords": ["true story", "discovered", "changed everything", "blueprint"]
+      }
+    },
+    "funnel": {
+      "landing": {
+        "url": "https://example.com/service-stack-method",
+        "domain": "example.com",
+        "ctaText": "Get The Blueprint"
+      },
+      "conversion": {
+        "objective": "lead_generation",
+        "offerType": "lead_magnet"
+      }
+    },
+    "targeting": {
+      "platforms": ["facebook"],
+      "audience": {
+        "type": "b2b",
+        "indicators": ["service providers", "freelancers", "consultants"]
+      }
+    },
+    "performance": {
+      "metrics": {
+        "daysRunning": 67,
+        "isActive": false,
+        "creativesCount": 2
+      },
+      "timeline": {
+        "startDate": "2025-04-01",
+        "endDate": "2025-06-07",
+        "isActive": false
+      }
+    },
+    "strategy": {
+      "objective": "lead_generation",
+      "positioning": "value",
+      "differentiators": ["risk_reversal", "availability"],
+      "approach": "personalized"
+    },
+    "metadata": {
+      "scrapedAt": "2025-06-20T10:34:00Z",
+      "pageUrl": "https://www.facebook.com/ads/library/?view_all_page_id=847563928475632",
+      "pageNumber": 1
+    }
+  }
+]
