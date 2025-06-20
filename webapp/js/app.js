@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('darkModeToggle').innerHTML = '<i class="fas fa-sun"></i>';
     }
     
-    // Load sample data if available
-    loadSampleData();
+    // Don't load sample data on main dashboard - wait for real data upload
+    // loadSampleData();
 });
 
 // Handle file upload
@@ -135,7 +135,10 @@ function createAdCard(ad) {
         <div class="p-6">
             <!-- Image -->
             <div class="mb-4 -mx-6 -mt-6">
-                <img src="${primaryImage}" alt="Ad creative" class="w-full h-48 object-cover rounded-t-lg">
+                <img src="${primaryImage}" 
+                     alt="Ad creative" 
+                     onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\\\'http://www.w3.org/2000/svg\\\' width=\\\'400\\\' height=\\\'200\\\' viewBox=\\\'0 0 400 200\\\'%3E%3Crect width=\\\'400\\\' height=\\\'200\\\' fill=\\\'%23e5e7eb\\\'/%3E%3Ctext x=\\\'50%25\\\' y=\\\'50%25\\\' text-anchor=\\\'middle\\\' dy=\\\'.3em\\\' fill=\\\'%236b7280\\\' font-family=\\\'Arial\\\' font-size=\\\'16\\\'%3ENo Image Available%3C/text%3E%3C/svg%3E'"
+                     class="w-full h-48 object-cover rounded-t-lg">
             </div>
             
             <!-- Advertiser -->
