@@ -37,8 +37,8 @@
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="docs/images/dashboard.png" alt="Dashboard" width="600">
-  <p><em>Intelligence Dashboard Overview</em></p>
+  <p><em>View the live demo at: https://YOUR_USERNAME.github.io/facebook-ads-intelligence/demo.html</em></p>
+  <p>Screenshot coming soon - dashboard shows emotional trigger analysis, timeline charts, and ad gallery</p>
 </div>
 
 ## 🛠️ Installation
