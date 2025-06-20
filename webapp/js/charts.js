@@ -55,7 +55,8 @@ function updateTriggersChart() {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
+            aspectRatio: 1.5,
             plugins: {
                 legend: {
                     position: 'bottom',
@@ -136,7 +137,8 @@ function updateTimelineChart() {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
+            aspectRatio: 2,
             plugins: {
                 legend: {
                     display: false

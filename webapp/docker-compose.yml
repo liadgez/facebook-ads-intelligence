@@ -5,7 +5,7 @@ services:
     build: .
     container_name: facebook-ads-intelligence
     ports:
-      - "8080:80"
+      - "8081:80"
     volumes:
       # Mount current directory for live updates during development
       - .:/usr/share/nginx/html:ro
