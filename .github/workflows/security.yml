@@ -1,0 +1,60 @@
+name: Security Scan
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  schedule:
+    - cron: '0 6 * * 1'  # Weekly on Monday
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        scan-type: 'fs'
+        scan-ref: '.'
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+    
+    - name: Upload Trivy scan results to GitHub Security tab
+      uses: github/codeql-action/upload-sarif@v3
+      if: always()
+      with:
+        sarif_file: 'trivy-results.sarif'
+
+  dependency-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      if: hashFiles('package.json') != ''
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Run npm audit
+      if: hashFiles('package.json') != ''
+      run: npm audit --audit-level moderate
+      
+    - name: Setup Python
+      if: hashFiles('requirements.txt') != '' || hashFiles('pyproject.toml') != ''
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        
+    - name: Install safety
+      if: hashFiles('requirements.txt') != '' || hashFiles('pyproject.toml') != ''
+      run: pip install safety
+      
+    - name: Run safety check
+      if: hashFiles('requirements.txt') != ''
+      run: safety check -r requirements.txt
